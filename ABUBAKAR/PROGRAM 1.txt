@@ -1,0 +1,28 @@
+<!-- Program-1A: Develop a JavaScript Program to Capitalize the first letter of each Word of a sentence (String). -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Program-1A</title>
+</head>
+<body>
+  <h2>Program-1A</h2>
+  <h2>Develop a Javascript Program to Capitalize the first letter of each Word of a sentence (String).</h2>
+  <script>
+    function capitalizeFirstLetterOfEachWord(sentence) {
+      return sentence.split(' ').map(word => {
+        return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+      }).join(' ');
+    }
+
+    const inputString = "great. you have successfully executed the program";
+    const capitalizedString = capitalizeFirstLetterOfEachWord(inputString);
+    document.write('<h3>' + capitalizedString + '</h3>');
+  </script>
+</body>
+</html>
+___________________________________________________________________________
+Program-1A
+Develop a Javascript Program to Capitalize the first letter of each Word of a sentence (String).
+Great. You Have Successfully Executed The Program
+___________________________________________________________________________

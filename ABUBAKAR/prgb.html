@@ -1,0 +1,46 @@
+Program-1B
+Develop a Javascript Program to Check a string starts with 'Java'.
+YES, the string starts with Java
+___________________________________________________________________________
+<!-- Program-2A: Develop a JavaScript program to display the current day and time. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Program-2A</title>
+</head>
+<body>
+  <h1>Program-2A</h1>
+  <h2>Develop a JavaScript program to display the current day and time.</h2>
+  <script>
+    let myDate = new Date();
+    let myDay = myDate.getDay();
+
+    // Array of days
+    let weekday = [
+      'Sunday', 'Monday', 'Tuesday',
+      'Wednesday', 'Thursday', 'Friday', 'Saturday'
+    ];
+    document.write("Today is : " + weekday[myDay]);
+    document.write("<br/>");
+
+    // Get hour value
+    let hours = myDate.getHours();
+    let ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // The hour '0' should be '12'
+    let minutes = myDate.getMinutes();
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    let seconds = myDate.getSeconds();
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+    document.write("Current Time : " + hours + ":" + minutes + ":" + seconds + " " + ampm);
+  </script>
+</body>
+</html>
+___________________________________________________________________________
+Program-2B
+Develop a JavaScript program to reverse a given string.
+Original: Welcome
+Reversed: emocleW
+__________________________________
